@@ -27,5 +27,9 @@ public class ObjectRotator : MonoBehaviour
     }
 
     // Sets orbital speed based off distance to orbital object
-    void resetOrbitalSpeed() { rotateSpeed = Mathf.Sqrt(transform.parent.transform.localScale.x / transform.GetChild(0).transform.position.x / 100); }
+
+    // Might consider putting in line breaks for readability
+    void resetOrbitalSpeed() { 
+        rotateSpeed = Mathf.Sqrt(transform.parent.transform.localScale.x / 
+            transform.GetChild(0).transform.position.x / 100); }
 }
